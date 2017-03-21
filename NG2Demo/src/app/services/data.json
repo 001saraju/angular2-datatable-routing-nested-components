@@ -1,0 +1,51 @@
+﻿[
+  {
+    "name": "sarju",
+    "email": "sarju@mail.com",
+    "regDate": "2016-01-09T14:48:34-08:00",
+    "city": "ahmedabad",
+    "age": 23
+  },
+  {
+    "name": "uday",
+    "email": "uday@mail.org",
+    "regDate": "2017-01-23T20:09:52-08:00",
+    "city": "bhavnagar",
+    "age": 32
+  },
+  {
+    "name": "nikhil",
+    "email": "nikhil@mail.ca",
+    "regDate": "2015-11-19T19:11:33-08:00",
+    "city": "ahmedabad",
+    "age": 31
+  },
+  {
+    "name": "arjun",
+    "email": "arjun@mail.net",
+    "regDate": "2015-11-02T07:59:34-08:00",
+    "city": "rajkot",
+    "age": 50
+  },
+  {
+    "name": "bhavesh",
+    "email": "bhanesh@mail.edu",
+    "regDate": "2017-02-25T15:42:17-08:00",
+    "city": "bhavnagar",
+    "age": 24
+  },
+  {
+    "name": "mohit",
+    "email": "mohit@mail.org",
+    "regDate": "2016-03-07T03:47:55-08:00",
+    "city": "surat",
+    "age": 24
+  },
+  {
+    "name": "tarun",
+    "email": "tarun@mail.net",
+    "regDate": "2017-02-27T20:03:50-08:00",
+    "city": "junagadh",
+    "age": 45
+  }
+]
