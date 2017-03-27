@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { Error403Component } from './component/Error403';
 import { DashboardComponent } from './component/dashboard';
-
+import { NestedComponent } from './nestedComponent/nested';
 const appRoutes: Routes = [
     {
         path: 'dashboard',
@@ -13,15 +13,33 @@ const appRoutes: Routes = [
                 component: DashboardComponent
             },
             {
-                path: 'index',
+                path: 'index/:id',
                 component: DashboardComponent
             },
-            { path: 'unauthorized', component: Error403Component },
+            {
+                path: 'unauthorized',
+                component: Error403Component
+            },
         ]
     },
-    { path: '**', component: DashboardComponent }
-    //{ path: '**', redirectTo: '' }
-    //,{ path: '', component: DashboardComponent }
+    {
+        path: 'nested',
+        children: [
+            {
+                path: '',
+                component: NestedComponent
+            },
+            {
+                path: 'index',
+                component: NestedComponent
+            },
+            {
+                path: 'unauthorized',
+                component: Error403Component
+            },
+        ]
+    },
+    { path: '**', component: Error403Component }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

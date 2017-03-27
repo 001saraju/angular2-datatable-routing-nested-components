@@ -133,8 +133,11 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="src\app\nestedComponent\child2.html" />
+    <Content Include="src\app\nestedComponent\child1.html" />
+    <Content Include="src\app\nestedComponent\nested.html" />
     <Content Include="src\app\component\dashboard.html" />
-    <Content Include="src\app\component\app.component.html" />
+    <Content Include="src\app\app.component.html" />
     <Content Include="src\app\component\Error403.html" />
     <Content Include="src\app\component\styles.css" />
     <Content Include="src\app\demoapp.html" />
@@ -177,8 +180,11 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app\app.route.ts" />
-    <TypeScriptCompile Include="src\app\component\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\nestedComponent\child2.ts" />
+    <TypeScriptCompile Include="src\app\nestedComponent\child1.ts" />
+    <TypeScriptCompile Include="src\app\nestedComponent\nested.ts" />
     <TypeScriptCompile Include="src\app\component\dashboard.ts" />
     <TypeScriptCompile Include="src\app\component\Error403.ts" />
     <TypeScriptCompile Include="src\app\models\Common.ts" />

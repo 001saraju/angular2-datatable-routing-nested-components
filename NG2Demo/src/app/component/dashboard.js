@@ -12,8 +12,11 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var data_service_1 = require("../services/data-service");
 var items_service_1 = require("../services/items-service");
+var router_1 = require("@angular/router");
 var DashboardComponent = (function () {
-    function DashboardComponent(http, dataService, itemsService) {
+    function DashboardComponent(router, route, http, dataService, itemsService) {
+        this.router = router;
+        this.route = route;
         this.http = http;
         this.dataService = dataService;
         this.itemsService = itemsService;
@@ -27,6 +30,10 @@ var DashboardComponent = (function () {
     }
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
+        if (this.route.snapshot.params['id'] != undefined) {
+            this.id = +this.route.snapshot.params['id'];
+            alert('id = ' + this.id);
+        }
         this.dataService.getData()
             .subscribe(function (data) {
             _this.data = data;
@@ -51,7 +58,7 @@ DashboardComponent = __decorate([
         templateUrl: 'dashboard.html',
         styleUrls: ['styles.css']
     }),
-    __metadata("design:paramtypes", [http_1.Http, data_service_1.DataService, items_service_1.ItemsService])
+    __metadata("design:paramtypes", [router_1.Router, router_1.ActivatedRoute, http_1.Http, data_service_1.DataService, items_service_1.ItemsService])
 ], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
 //# sourceMappingURL=dashboard.js.map

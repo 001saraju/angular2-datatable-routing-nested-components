@@ -13,8 +13,11 @@ var http_1 = require("@angular/http");
 require("./rxjs-operator");
 var app_route_1 = require("./app.route");
 var Error403_1 = require("./component/Error403");
-var app_component_1 = require("./component/app.component");
+var app_component_1 = require("./app.component");
 var dashboard_1 = require("./component/dashboard");
+var nested_1 = require("./nestedComponent/nested");
+var child1_1 = require("./nestedComponent/child1");
+var child2_1 = require("./nestedComponent/child2");
 var data_filter_1 = require("./pipes/data-filter");
 var data_service_1 = require("./services/data-service");
 var CommonHelper_1 = require("./services/CommonHelper");
@@ -42,6 +45,9 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             Error403_1.Error403Component,
             dashboard_1.DashboardComponent,
+            nested_1.NestedComponent,
+            child1_1.Child1Component,
+            child2_1.Child2Component,
             data_filter_1.DataFilterPipe
         ],
         bootstrap: [app_component_1.AppComponent]

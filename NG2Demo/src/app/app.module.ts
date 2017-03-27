@@ -7,8 +7,11 @@ import './rxjs-operator';
 
 import { routing } from './app.route';
 import { Error403Component } from './component/Error403';
-import { AppComponent } from './component/app.component';
+import { AppComponent } from './app.component';
 import { DashboardComponent } from './component/dashboard';
+import { NestedComponent } from './nestedComponent/nested';
+import { Child1Component } from './nestedComponent/child1';
+import { Child2Component } from './nestedComponent/child2';
 
 import { DataFilterPipe } from './pipes/data-filter';
 import { DataService } from './services/data-service';
@@ -32,6 +35,9 @@ import { ItemsService } from './services/items-service';
         AppComponent,
         Error403Component,
         DashboardComponent,
+        NestedComponent,
+        Child1Component,
+        Child2Component,
         DataFilterPipe
     ],
     bootstrap: [AppComponent]
