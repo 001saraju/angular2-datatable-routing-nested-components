@@ -13,7 +13,11 @@ const appRoutes: Routes = [
                 component: DashboardComponent
             },
             {
-                path: 'index/:id',
+                path: 'index',
+                component: DashboardComponent
+            },
+            {
+                path: 'edit/:id',
                 component: DashboardComponent
             },
             {

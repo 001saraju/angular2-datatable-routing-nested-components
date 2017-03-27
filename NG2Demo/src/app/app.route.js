@@ -12,7 +12,11 @@ var appRoutes = [
                 component: dashboard_1.DashboardComponent
             },
             {
-                path: 'index/:id',
+                path: 'index',
+                component: dashboard_1.DashboardComponent
+            },
+            {
+                path: 'edit/:id',
                 component: dashboard_1.DashboardComponent
             },
             {
